@@ -1,2 +1,2 @@
-# infotmatico.tayllefert.com
+# informatico.tayllefert.com
 Pagina web
