@@ -1,82 +1,187 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>José Ángel Aquino Tayllefert — Portfolio</title>
-<meta name="description" content="Portfolio de José Ángel Aquino Tayllefert: estudiante de Desarrollo de Aplicaciones Web (DAW), con base en SMR, experiencia en reparación de equipos, electricidad y carpintería." />
-<link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>José Ángel Aquino Tayllefert — Portfolio</title>
+  <meta name="description" content="Portfolio de José Ángel Aquino Tayllefert: estudiante de Desarrollo de Aplicaciones Web (DAW), con base en SMR, experiencia en reparación de equipos, electricidad y carpintería." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-<!-- Barra superior -->
-<header class="site-header">
-<nav class="nav container">
-<a href="#home" class="logo" aria-label="Inicio">J.A.A.T</a>
-<button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">☰</button>
-<ul class="nav-links" id="navLinks">
-<li><a href="#home" data-i18n="nav.home">Inicio</a></li>
-<li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
-<li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
-<li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
-<li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
-<li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
-</ul>
-<div class="lang-switch" role="group" aria-label="Selector de idioma">
-<button class="lang-btn is-active" data-lang="es">ES</button>
-<button class="lang-btn" data-lang="en">EN</button>
-</div>
-</nav>
-</header>
+  <!-- Barra superior -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo" aria-label="Inicio">J.A.A.T</a>
+      <button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Selector de idioma">
+        <button class="lang-btn is-active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
 
+  <!-- Portada -->
+  <section id="home" class="section hero">
+    <div class="container grid-2">
+      <div class="hero-text reveal">
+        <h1><span data-i18n="hero.hi">Hola, soy</span> <strong>José Ángel Aquino Tayllefert</strong></h1>
+        <p class="subtitle" data-i18n="hero.subtitle">Estudiante de Desarrollo de Aplicaciones Web · Tech Enthusiast</p>
+        <p class="lead" data-i18n="hero.lead">
+          Creativo, resolutivo y responsable. Busco oportunidades junior o trabajos temporales compatibles con mis estudios.
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener" data-i18n="hero.downloadCV">Descargar CV</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.contactMe">Contáctame</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/foto.jpg" alt="Foto de José Ángel Aquino Tayllefert" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Portada -->
-<section id="home" class="section hero">
-<div class="container grid-2">
-<div class="hero-text reveal">
-<h1><span data-i18n="hero.hi">Hola, soy</span> <strong>José Ángel Aquino Tayllefert</strong></h1>
-<p class="subtitle" data-i18n="hero.subtitle">Estudiante de Desarrollo de Aplicaciones Web · Tech Enthusiast</p>
-<p class="lead" data-i18n="hero.lead">
-Creativo, resolutivo y responsable. Busco oportunidades junior o trabajos temporales compatibles con mis estudios.
-</p>
-<div class="hero-cta">
-<a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener" data-i18n="hero.downloadCV">Descargar CV</a>
-<a class="btn btn-ghost" href="#contact" data-i18n="hero.contactMe">Contáctame</a>
-</div>
-</div>
-<div class="hero-photo reveal">
-<div class="photo-frame">
-<img src="assets/foto.jpg" alt="Foto de José Ángel Aquino Tayllefert" loading="lazy" />
-</div>
-</div>
-</div>
-</section>
+  <!-- Sobre mí -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="reveal">
+        <h2 data-i18n="about.title">Sobre mí</h2>
+        <p data-i18n="about.text1">
+          Soy estudiante de Desarrollo de Aplicaciones Web (DAW) y cuento con formación en Sistemas Microinformáticos y Redes (SMR). Tengo experiencia reparando equipos (más de 200 PCs en el Ayuntamiento de Huelva en menos de una semana durante mis prácticas) y conocimientos en electricidad, carpintería y un poco de electrónica. Inglés básico.
+        </p>
+        <p data-i18n="about.text2">
+          Me apasiona crear soluciones útiles y bien diseñadas. Me considero una persona responsable, organizada y muy resolutiva.
+        </p>
+        <ul class="tags">
+          <li>DAW (en curso)</li>
+          <li>SMR</li>
+          <li data-i18n="about.tags.repair">Reparación de PCs</li>
+          <li data-i18n="about.tags.electric">Electricidad</li>
+          <li data-i18n="about.tags.carpentry">Carpintería</li>
+          <li data-i18n="about.tags.electronics">Electrónica básica</li>
+        </ul>
+      </div>
+      <div class="card timeline reveal">
+        <h3 data-i18n="about.timeline">Formación</h3>
+        <ul>
+          <li><span>ESO</span></li>
+          <li><span>SMR — Sistemas Microinformáticos y Redes</span></li>
+          <li><span>DAW — Desarrollo de Aplicaciones Web (2º año)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <!-- Habilidades -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="reveal" data-i18n="skills.title">Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill reveal"><span>HTML</span></div>
+        <div class="skill reveal"><span>CSS</span></div>
+        <div class="skill reveal"><span>Java</span></div>
+        <div class="skill reveal"><span>JavaScript</span></div>
+        <div class="skill reveal"><span>Python</span></div>
+        <div class="skill reveal"><span>SQL</span></div>
+      </div>
+      <h3 class="soft-title reveal" data-i18n="skills.soft">Competencias</h3>
+      <ul class="soft-list">
+        <li class="reveal" data-i18n="skills.softItems.problem">Resolutivo</li>
+        <li class="reveal" data-i18n="skills.softItems.fast">Rápido trabajando</li>
+        <li class="reveal" data-i18n="skills.softItems.responsible">Responsable</li>
+        <li class="reveal" data-i18n="skills.softItems.organized">Organizado</li>
+      </ul>
+    </div>
+  </section>
 
-<!-- Sobre mí -->
-<section id="about" class="section">
-<div class="container grid-2">
-<div class="reveal">
-<h2 data-i18n="about.title">Sobre mí</h2>
-<p data-i18n="about.text1">
-Soy estudiante de Desarrollo de Aplicaciones Web (DAW) y cuento con formación en Sistemas Microinformáticos y Redes (SMR). Tengo experiencia reparando equipos (más de 200 PCs en el Ayuntamiento de Huelva en menos de una semana durante mis prácticas) y conocimientos en electricidad, carpintería y un poco de electrónica. Inglés básico.
-</p>
-<p data-i18n="about.text2">
-Me apasiona crear soluciones útiles y bien diseñadas. Me considero una persona responsable, organizada y muy resolutiva.
-</p>
-<ul class="tags">
-<li>DAW (en curso)</li>
-<li>SMR</li>
-<li data-i18n="about.tags.repair">Reparación de PCs</li>
-<li data-i18n="about.tags.electric">Electricidad</li>
-<li data-i18n="about.tags.carpentry">Carpintería</li>
-<li data-i18n="about.tags.electronics">Electrónica básica</li>
-</ul>
-</div>
-<div class="card timeline reveal">
-<h3 data-i18n="about.timeline">Formación</h3>
-<ul>
-<li><span>ESO</span></li>
-<li><span>SMR — Sistemas Microinformáticos y Redes</span></li>
-<li><span>DAW — Desarrollo de Aplicaciones Web (2º año)</span></li>
+  <!-- Experiencia -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="reveal" data-i18n="experience.title">Experiencia</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <h3 data-i18n="experience.huelva.title">Ayuntamiento de Huelva — Prácticas</h3>
+          <p data-i18n="experience.huelva.desc">Reparación y puesta a punto de más de 200 PCs en menos de 1 semana.</p>
+        </article>
+        <article class="card reveal">
+          <h3 data-i18n="experience.tay.title">Electricidad Tayllefert — Web</h3>
+          <p data-i18n="experience.tay.desc">Diseño y desarrollo de la página web para la empresa familiar.</p>
+        </article>
+        <article class="card reveal">
+          <h3 data-i18n="experience.other.title">Experiencia adicional</h3>
+          <p data-i18n="experience.other.desc">Electricidad, carpintería e introducción a la electrónica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="reveal" data-i18n="projects.title">Proyectos</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Electricidad Tayllefert</h3>
+          <p data-i18n="projects.tay.desc">Sitio web informativo para negocio de electricidad.</p>
+          <div class="actions">
+            <a class="btn btn-ghost" href="https://github.com/TAYllefert10/infotmatico.tayllefert.com" target="_blank" rel="noopener" data-i18n="projects.viewCode">Ver código</a>
+          </div>
+        </article>
+        <article class="card reveal placeholder">
+          <h3 data-i18n="projects.next.title">Tu próximo proyecto</h3>
+          <p data-i18n="projects.next.desc">Añadiré aquí mis siguientes trabajos (web, apps, scripts...).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="reveal">
+        <h2 data-i18n="contact.title">Contacto</h2>
+        <p data-i18n="contact.text">¿Hablamos? Estoy abierto a oportunidades junior y trabajos de media jornada compatibles con mis estudios.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:tuemail@ejemplo.com?subject=Contacto%20desde%20portfolio" data-i18n="contact.email">Enviar email</a>
+          <a class="btn btn-ghost" href="https://github.com/TAYllefert10" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener" data-i18n="contact.linkedin">LinkedIn (pronto)</a>
+        </div>
+      </div>
+      <form class="contact-card card reveal" onsubmit="return handleMailto(event)" aria-label="Formulario de contacto">
+        <label>
+          <span data-i18n="form.name">Nombre</span>
+          <input type="text" name="name" placeholder="Tu nombre" data-i18n-attr="placeholder:form.placeholders.name" required />
+        </label>
+        <label>
+          <span data-i18n="form.email">Email</span>
+          <input type="email" name="email" placeholder="tucorreo@ejemplo.com" data-i18n-attr="placeholder:form.placeholders.email" required />
+        </label>
+        <label>
+          <span data-i18n="form.message">Mensaje</span>
+          <textarea name="message" rows="5" placeholder="Cuéntame en qué puedo ayudarte" data-i18n-attr="placeholder:form.placeholders.message" required></textarea>
+        </label>
+        <button type="submit" class="btn" data-i18n="form.send">Enviar</button>
+        <p class="form-note" data-i18n="form.note">* Este formulario abrirá tu cliente de correo.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> José Ángel Aquino Tayllefert • <span data-i18n="footer.rights">Todos los derechos reservados</span></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
