@@ -1,106 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Currículum - José Ángel Aquino Tayllefert</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>José Ángel Aquino Tayllefert — Portfolio</title>
+<meta name="description" content="Portfolio de José Ángel Aquino Tayllefert: estudiante de Desarrollo de Aplicaciones Web (DAW), con base en SMR, experiencia en reparación de equipos, electricidad y carpintería." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-  <!-- Fondo partículas -->
-  <div id="particles-js"></div>
+<!-- Barra superior -->
+<header class="site-header">
+<nav class="nav container">
+<a href="#home" class="logo" aria-label="Inicio">J.A.A.T</a>
+<button class="menu-toggle" aria-label="Abrir menú" id="menuToggle">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" data-i18n="nav.home">Inicio</a></li>
+<li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+<li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+<li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+<li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+<li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+</ul>
+<div class="lang-switch" role="group" aria-label="Selector de idioma">
+<button class="lang-btn is-active" data-lang="es">ES</button>
+<button class="lang-btn" data-lang="en">EN</button>
+</div>
+</nav>
+</header>
 
-  <header class="header">
-    <img src="images/perfil.webp" alt="Foto de José Ángel" class="profile-img" />
-    <div class="intro">
-      <h1>José Ángel Aquino Tayllefert</h1>
-      <p>Desarrollador Web | Técnico Informático</p>
-    </div>
-  </header>
 
-  <main class="container">
-    <section>
-      <h2>📍 Contacto</h2>
-      <ul>
-        <li><strong>Dirección:</strong> Huelva, España, 21005</li>
-        <li><strong>Teléfono:</strong> +34 747 85 84 57</li>
-        <li><strong>Email:</strong> <a href="mailto:joseangelaquinotayllefert10@gmail.com">joseangelaquinotayllefert10@gmail.com</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/TAYllefert10" target="_blank">TAYllefert10</a></li>
-      </ul>
-    </section>
+<!-- Portada -->
+<section id="home" class="section hero">
+<div class="container grid-2">
+<div class="hero-text reveal">
+<h1><span data-i18n="hero.hi">Hola, soy</span> <strong>José Ángel Aquino Tayllefert</strong></h1>
+<p class="subtitle" data-i18n="hero.subtitle">Estudiante de Desarrollo de Aplicaciones Web · Tech Enthusiast</p>
+<p class="lead" data-i18n="hero.lead">
+Creativo, resolutivo y responsable. Busco oportunidades junior o trabajos temporales compatibles con mis estudios.
+</p>
+<div class="hero-cta">
+<a class="btn" href="assets/cv.pdf" target="_blank" rel="noopener" data-i18n="hero.downloadCV">Descargar CV</a>
+<a class="btn btn-ghost" href="#contact" data-i18n="hero.contactMe">Contáctame</a>
+</div>
+</div>
+<div class="hero-photo reveal">
+<div class="photo-frame">
+<img src="assets/foto.jpg" alt="Foto de José Ángel Aquino Tayllefert" loading="lazy" />
+</div>
+</div>
+</div>
+</section>
 
-    <section>
-      <h2>🎯 Perfil Profesional</h2>
-      <p>
-        Joven responsable, resolutivo y con gran capacidad para el trabajo en equipo. Me adapto rápidamente a cualquier tipo de tarea, manteniendo siempre una actitud positiva. Acostumbrado a trabajar bajo presión, soy eficaz, rápido y confiable.
-      </p>
-    </section>
 
-    <section>
-      <h2>💼 Experiencia Laboral</h2>
-      <div class="job">
-        <h3>Prácticas Dual – Desarrollador Web</h3>
-        <p><em>FOE | feb 2024 – mar 2024</em></p>
-        <ul>
-          <li>Apoyo en desarrollo y mantenimiento de páginas web.</li>
-          <li>Trabajo en equipo con diseño y desarrollo.</li>
-          <li>Uso de HTML, CSS y JavaScript.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Prácticas – Técnico de Soporte Informático</h3>
-        <p><em>Ayuntamiento de Huelva | mar 2024 – jun 2024</em></p>
-        <ul>
-          <li>Reparación de más de 200 equipos.</li>
-          <li>Diagnóstico y resolución de problemas técnicos.</li>
-          <li>Trabajo bajo presión cumpliendo plazos.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>🎓 Formación Académica</h2>
-      <ul>
-        <li><strong>Grado Superior DAW</strong> – IES La Marisma (2024 – 2026)</li>
-        <li><strong>Grado Medio SMR</strong> – IES La Marisma (2022 – 2024)</li>
-        <li><strong>ESO</strong> – IES La Orden (2017 – 2022)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🛠️ Habilidades</h2>
-      <ul>
-        <li>Trabajo en equipo y compañerismo</li>
-        <li>Rapidez y eficacia en tareas repetitivas</li>
-        <li>Atención al detalle y organización</li>
-        <li>Informática, reparación, TPV</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🌍 Idiomas</h2>
-      <ul>
-        <li>Inglés: Nivel intermedio (académico y autodidacta)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🔧 Otros Datos</h2>
-      <ul>
-        <li>Responsabilidad y autonomía</li>
-        <li>Experiencia en pequeñas reparaciones</li>
-        <li>Disponible para turnos rotativos o nocturnos</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2025 José Ángel Aquino Tayllefert</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
-</body>
+<!-- Sobre mí -->
+<section id="about" class="section">
+<div class="container grid-2">
+<div class="reveal">
+<h2 data-i18n="about.title">Sobre mí</h2>
+<p data-i18n="about.text1">
+Soy estudiante de Desarrollo de Aplicaciones Web (DAW) y cuento con formación en Sistemas Microinformáticos y Redes (SMR). Tengo experiencia reparando equipos (más de 200 PCs en el Ayuntamiento de Huelva en menos de una semana durante mis prácticas) y conocimientos en electricidad, carpintería y un poco de electrónica. Inglés básico.
+</p>
+<p data-i18n="about.text2">
+Me apasiona crear soluciones útiles y bien diseñadas. Me considero una persona responsable, organizada y muy resolutiva.
+</p>
+<ul class="tags">
+<li>DAW (en curso)</li>
+<li>SMR</li>
+<li data-i18n="about.tags.repair">Reparación de PCs</li>
+<li data-i18n="about.tags.electric">Electricidad</li>
+<li data-i18n="about.tags.carpentry">Carpintería</li>
+<li data-i18n="about.tags.electronics">Electrónica básica</li>
+</ul>
+</div>
+<div class="card timeline reveal">
+<h3 data-i18n="about.timeline">Formación</h3>
+<ul>
+<li><span>ESO</span></li>
+<li><span>SMR — Sistemas Microinformáticos y Redes</span></li>
+<li><span>DAW — Desarrollo de Aplicaciones Web (2º año)</span></li>
 </html>
